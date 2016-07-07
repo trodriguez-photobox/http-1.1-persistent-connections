@@ -11,7 +11,9 @@ window.onload = function() {
 function start() {
     console.log("Firing requests...");
 
-    timer = window.setInterval(fireRequest, 500);
+    var interval = document.getElementById('interval').value;
+
+    timer = window.setInterval(fireRequest, interval * 1000);
 }
 
 function fireRequest() {
